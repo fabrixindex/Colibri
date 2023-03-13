@@ -1,0 +1,42 @@
+.nav-bar{
+    background-color: rgb(199, 11, 11);
+    color: white;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-lista li{
+    display: inline-block;
+    padding: 0 20px;   
+}
+
+.nav-lista li:hover{
+    transform: scale(1.1);
+}
+
+.nav-lista a{
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;  
+}
+
+.nav-lista a:hover{
+    color: #e6e6e6;
+}
+
+.nav-item{
+    list-style-type: none;
+}
+
+.nav-logo{
+    cursor: pointer;
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.nav-logo:hover{
+    transform: scale(1.2);
+}
