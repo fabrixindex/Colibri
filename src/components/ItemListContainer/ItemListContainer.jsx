@@ -1,8 +1,31 @@
-import "./ItemListContainer.css";
+import React, { useState, useEffect } from "react";
+import ItemList from "../ItemList/ItemList";
+import productsfromdatabase from "../data/products";
 
-function ItemListContainer(props){
+function getItems() {
+  const promesa = new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(productsfromdatabase);
+    }, 500);
+  });
+
+  return promesa;
+}
+
+function ItemListContainer(){
+
+    const [products, setProducts] = useState([]);
+
+    useEffect(
+        getItems().then((respuesta) => {
+            setProducts(respuesta)
+        })
+    );
+
     return(
-        <div className="Item-list-container">{props.children}</div>
+        <div>
+            <ItemList products={products}/>
+        </div> 
     )
 }
 
