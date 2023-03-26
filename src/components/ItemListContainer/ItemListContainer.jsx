@@ -16,17 +16,15 @@ function ItemListContainer(){
 
     const [products, setProducts] = useState([]);
 
-    useEffect(
+    useEffect(()=> {
         getItems().then((respuesta) => {
             setProducts(respuesta)
-        })
-    );
+        });
+      }, []);
 
     return(
-        <div>
-            <ItemList products={products}/>
-        </div> 
-    )
+            <ItemList products={products}/> 
+    );
 }
 
 export default ItemListContainer;

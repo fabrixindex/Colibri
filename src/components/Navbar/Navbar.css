@@ -1,5 +1,5 @@
 .nav-bar{
-    background-color: rgb(199, 11, 11);
+    background-color: rgb(145, 212, 89);
     color: white;
     font-size: 1.3rem;
     display: flex;
@@ -18,7 +18,7 @@
 
 .nav-lista a{
     font-size: 700;
-    color: #eceff1;
+    color: #ffffff;
     text-decoration: none;  
 }
 
