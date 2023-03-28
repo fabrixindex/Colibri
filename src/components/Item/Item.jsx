@@ -3,17 +3,16 @@ import "./Item.css";
 
 function Item(props) {
   return (
-    <Link to={`/detalle/${props.id}`}>
+    <Link to={`/detalle/${props.id}`} className="card-link">
       <div>
         <div id={props.id} className="card">
           <div className="card-header">
             <h3>{props.title}</h3>
             <p>{props.description}</p>
-            <span>New</span>
           </div>
 
           <div className="card-img">
-            <img src="card-img.jpg" alt="..." />
+            <img src="card-img.jpg" alt="Imagen-producto" />
             <i className="bx bx-heart"></i>
           </div>
 
@@ -33,15 +32,6 @@ function Item(props) {
                 <i className="bx bx-check"></i>
               </div>
             </div>
-          </div>
-
-          <div className="card-sizes">
-            <span className="selected">38</span>
-            <span>39</span>
-            <span>40</span>
-            <span>41</span>
-            <span>42</span>
-            <span>43</span>
           </div>
 
           <div className="card-footer">

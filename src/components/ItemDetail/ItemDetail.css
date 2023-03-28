@@ -134,17 +134,3 @@
     background: #d5defe;
 }
 
-.card .card-footer button {
-    cursor: pointer;
-    width: 100%;
-    height: 46px;
-    border-radius: 12px;
-    background: linear-gradient(#6787fd, #3f66f5);
-    color: #ffffff;
-    font-size: 20px;
-    letter-spacing: .5px;
-}
-
-.card-link{
-    text-decoration: none
-};

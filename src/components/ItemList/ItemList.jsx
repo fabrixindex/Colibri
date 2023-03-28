@@ -1,8 +1,7 @@
 import ContenedorFlex from "../ContenedorFlex/ContenedorFlex";
 import Item from "../Item/Item";
-import products from "../../components/data/products"
 
-function ItemList(){
+function ItemList({products}){
     return(
         <ContenedorFlex>
 
@@ -16,6 +15,7 @@ function ItemList(){
             category={producto.category}
             img={producto.img}
             description={producto.description}
+            longDescription={producto.longDescription}
             />
             ))}
         </ContenedorFlex>

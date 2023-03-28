@@ -1,29 +1,32 @@
 const products = [
     {
         id: 1,
-        title: "Sofa 1",
+        title: "Sofa Venecia",
         category: "Sofas",
-        price: 1,
+        price: 57.499,
         stock: 1,
-        description: "aaa",
-        img: "",
+        description: "Sofa premium escandinavo de 2 cuerpos Color gris.",
+        longDescription: "El tamaño ideal y todo el confort que te mereces. Este sofá de 2 cuerpos es el mueble que necesitás para compartir y disfrutar momentos con amigos y familia. Sus dimensiones son ideales para que tus invitados y vos se sientan cómodos y a gusto en un mismo lugar.",
+        img: "sillon-1.jpg",
     },
     {
         id: 2,
-        title: "Sofa 2",
+        title: "Sofa Max Imperial",
         category: "Sofas",
-        price: 2,
+        price: 94.299,
         stock: 1,
-        description: "aaa",
+        description: "Sofa premiun esquinero de 3 cuerpos Color beige",
+        longDescription: "Un sofa fabricado para que nadie se quede afuera. Este sofa de 3 cuerpos esta hecho con madera saligna de 1 pulgada, perfectamente armada, encuadrada, encolada y clavada, fortalecida con escuadras brindando mayor durabilidad. Es uno de nuestros Modelos Mas Cómodos, Versátil y Practico",
         img: "",
     },
     {
         id: 3,
-        title: "Sofa 3",
+        title: "Sofa Verona",
         category: "Sofas",
-        price: 3,
+        price: 56.499,
         stock: 1,
-        description: "aaa",
+        description: "Sofa cubico de 3 cuerpos Color gris oscuro",
+        longDescription: "aaa",
         img: "",
     },
     {
@@ -33,6 +36,7 @@ const products = [
         price: 4,
         stock: 1,
         description: "aaa",
+        longDescription: "aaa",
         img: "",
     },
     {
@@ -42,6 +46,7 @@ const products = [
         price: 5,
         stock: 1,
         description: "aaa",
+        longDescription: "aaa",
         img: "",
     },
     {
@@ -51,6 +56,7 @@ const products = [
         price: 6,
         stock: 1,
         description: "aaa",
+        longDescription: "aaa",
         img: "",
     },    {
         id: 7,
@@ -59,6 +65,7 @@ const products = [
         price: 7,
         stock: 1,
         description: "aaa",
+        longDescription: "aaa",
         img: "",
     },    {
         id: 8,
@@ -67,6 +74,7 @@ const products = [
         price: 8,
         stock: 1,
         description: "aaa",
+        longDescription: "aaa",
         img: "",
     },    {
         id: 9,
@@ -75,6 +83,7 @@ const products = [
         price: 9,
         stock: 1,
         description: "aaa",
+        longDescription: "aaa",
         img: "",
     },    {
         id: 10,
@@ -83,6 +92,7 @@ const products = [
         price: 10,
         stock: 1,
         description: "aaa",
+        longDescription: "aaa",
         img: "",
     },    {
         id: 11,
@@ -91,6 +101,7 @@ const products = [
         price: 11,
         stock: 1,
         description: "aaa",
+        longDescription: "aaa",
         img: "",
     },    {
         id: 12,
@@ -99,6 +110,7 @@ const products = [
         price: 12,
         stock: 1,
         description: "aaa",
+        longDescription: "aaa",
         img: "",
     },
 ];

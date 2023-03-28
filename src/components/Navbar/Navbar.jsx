@@ -9,7 +9,7 @@ function Navbar() {
         <Link to="/">
           <div className="nav-logo_contenedor">
             <img
-              src="/img/logo-rosa-colibri.png"
+              src="/img/colibri-logo.png"
               alt="logo"
               className="nav-logo"
             />
@@ -28,9 +28,6 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <Link to="/category/Sillas">Sillas</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="#">Colibri Ofertas</Link>
           </li>
           <li className="nav-item">
             <CartWidget />
