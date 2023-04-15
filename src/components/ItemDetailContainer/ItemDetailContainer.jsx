@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-/*import ItemDetail from "../ItemDetail/ItemDetail";*/
 import { useParams } from "react-router-dom";
 import productsfromdatabase from "../data/products";
 import ItemDetail from "../ItemDetail/ItemDetail";
+import Loader from "../Loader/Loader";
 
 function getSingleItem(idURL) {
   const promesa = new Promise((resolve, reject) => {
@@ -20,8 +20,6 @@ function getSingleItem(idURL) {
 function ItemDetailContainer() {
   const [producto, setProduct] = useState([]);
 
-  /* { id: num } */
-
   let { id } = useParams();
 
   useEffect(() => {
@@ -30,9 +28,13 @@ function ItemDetailContainer() {
     });
   }, [id]);
 
-  /* FALTA HACER return <ItemDetail .... /> */
+  if (producto.length === 0){
+    return(<Loader/>)
+  }
 
-  return <ItemDetail producto={producto} />;
+  return(
+  <ItemDetail producto={producto} />
+  );
 }
 
 export default ItemDetailContainer;

@@ -1,6 +1,19 @@
 import "./ItemDetail.css";
+import ItemCount from "../ItemCount/ItemCount";
+import { useContext } from "react";
+import { cartContext } from "../../context/cartContext";
 
 function ItemDetail({ producto }) {
+
+  const { cart, addItem } = useContext(cartContext);
+  /*const { addedToCart, setAddedToCart} = useState(false);*/
+
+  console.log("cart", cart);
+  
+  function onAddToCart(count){
+    addItem(producto, count);
+  }
+
   return (
     <div>
       <div id={producto.id} className="card">
@@ -10,7 +23,7 @@ function ItemDetail({ producto }) {
         </div>
 
         <div className="card-img">
-          <img src="card-img.jpg" alt="Imagen-producto" />
+          <img src={`/img/${producto.img}`} alt="Imagen-producto-detalle" />
           <i className="bx bx-heart"></i>
         </div>
 
@@ -30,6 +43,9 @@ function ItemDetail({ producto }) {
               <i className="bx bx-check"></i>
             </div>
           </div>
+        </div>
+        <div>
+        <ItemCount onAddToCart={onAddToCart}/>
         </div>
       </div>
     </div>

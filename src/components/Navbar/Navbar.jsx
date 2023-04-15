@@ -30,7 +30,7 @@ function Navbar() {
             <Link to="/category/Sillas">Sillas</Link>
           </li>
           <li className="nav-item">
-            <CartWidget />
+            <Link to="/cart"><CartWidget /></Link>
           </li>
         </ul>
       </nav>

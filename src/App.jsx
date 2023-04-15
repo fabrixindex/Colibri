@@ -5,22 +5,30 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import "bootstrap/dist/css/bootstrap.css";
 /*import * as bootstrap from "bootstrap";*/
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { CartProvider } from "./context/cartContext";
+import CartContainer from "./components/CartContainer/CartContainer";
+
 
 function App() {
+
   return (
-    <BrowserRouter>
-      <Navbar />
+    <CartProvider>
+      <BrowserRouter>
+        <Navbar />
 
-      <Routes>
-        <Route path="/" element={<ItemListContainer />} />
+        <Routes>
+          <Route path="/" element={<ItemListContainer />} />
 
-        <Route path="/category/:categoryid" element={<ItemListContainer />} />
+          <Route path="/category/:categoryid" element={<ItemListContainer />} />
 
-        <Route path="/detalle/:id" element={<ItemDetailContainer />} />
+          <Route path="/detalle/:id" element={<ItemDetailContainer />} />
 
-        <Route path="*" element={<h1>Error 404. Page not found</h1>} />
-      </Routes>
-    </BrowserRouter>
+          <Route path="/cart" element={<CartContainer />} />
+
+          <Route path="*" element={<h1>Error 404. Page not found</h1>} />
+        </Routes>
+      </BrowserRouter>
+    </CartProvider>
   );
 }
 

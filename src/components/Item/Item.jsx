@@ -12,7 +12,7 @@ function Item(props) {
           </div>
 
           <div className="card-img">
-            <img src="card-img.jpg" alt="Imagen-producto" />
+            <img src={`/img/${props.img}`} alt="Imagen-producto" />
             <i className="bx bx-heart"></i>
           </div>
 
