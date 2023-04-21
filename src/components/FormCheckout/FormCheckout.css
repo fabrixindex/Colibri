@@ -1,0 +1,79 @@
+*{box-sizing:border-box;}
+
+form{
+	width:400px;
+	padding:25px;
+	border-radius:10px;
+	margin:auto;
+	background-color: beige;
+}
+
+form label{
+	width:72px;
+	display:inline-block;
+    margin-bottom: 0.3rem;
+    text-decoration: underline rgb(175, 175, 175);
+}
+
+.input-form{
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"]{
+	width:350px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+    margin-bottom: 1rem;
+}
+
+
+form input[type="text"],form input[type="email"],form input[type="number"]:hover{
+	cursor:pointer;
+}
+
+.form-title{
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    text-align: center;
+    text-decoration: underline;
+    color: #3f3e3e;
+    margin-bottom: 0.6rem;
+}
+
+.btn-cancelar, .btn-finalizar-compra{
+    padding: 0.7rem;
+    color: white;
+    font-weight: bold;
+    border-radius:  4px; 
+    border: none;
+    font-size: 1.2rem;
+}
+
+.btn-cancelar:hover{
+    box-shadow: 0px 4px 5px #d7d7db;
+}
+
+.btn-finalizar-compra:hover{
+    box-shadow: 0px 4px 5px #d7d7db;
+}
+
+.btn-cancelar{
+    background-color: rgb(232, 245, 114);
+}
+
+.btn-finalizar-compra{
+    background-color: rgb(127, 235, 113);
+    margin-left: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}

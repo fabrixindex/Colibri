@@ -1,6 +1,27 @@
+import "./Loader.css"
+
 function Loader() {
   return (
-    <h1>Cargando...</h1>
+    <div className="grid">
+      <div className="loader">
+        <div id="ld2">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
 

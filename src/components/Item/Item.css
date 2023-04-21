@@ -1,6 +1,6 @@
 .card {
     position: relative;
-    width: 380px;
+    width: 360px;
     height: min-content;
     padding: 25px;
     background: #ffffff;
@@ -18,31 +18,20 @@
 
 .card .card-header h3 {
     color: #404d61;
-    font-size: 28px;
+    font-size: 24px;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
 
 .card .card-header p {
     color: #757d8a;
-    font-size: 20px;
+    font-size: 17px;
     font-family: 'Montserrat', sans-serif;
-}
-
-.card .card-header span {
-    position: absolute;
-    color: #f43c3c;
-    background: #fef0f0;
-    right: 25px;
-    top: 25px;
-    padding: 5px 10px;
-    border-radius: 12px;
-    font-size: 18px;
 }
 
 .card .card-img {
     position: relative;
-    height: 220px;
+    height: 200px;
     border-radius: 12px;
     margin: 22px 0;
     overflow: hidden;
@@ -86,37 +75,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.card .card-details .colors {
-    display: flex;
-}
-
-.card .card-details .colors div {
-    cursor: pointer;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    margin: 0 4px;
-}
-
-.card .card-details .colors div:nth-child(1) {
-    background: linear-gradient(90deg, #b72c31, #efb9b0);
-}
-
-.card .card-details .colors div:nth-child(2) {
-    background: linear-gradient(90deg, #25476d, #a8bed2);
-}
-
-.card .card-details .colors div:nth-child(3) {
-    background: linear-gradient(90deg, #10505b, #a4beb2);
-}
-
-.card .card-details .colors div i {
-    color: #ffffff;
-    margin: 5px;
-    font-size: 25px;
-    opacity: 0;
-}
-
 .card .card-details .colors div.selected i {
     opacity: 1;
 }
@@ -139,10 +97,15 @@
     width: 100%;
     height: 46px;
     border-radius: 12px;
-    background: linear-gradient(#6787fd, #3f66f5);
+    background-color: rgb(127, 235, 113);;
     color: #ffffff;
     font-size: 20px;
     letter-spacing: .5px;
+    -webkit-text-stroke: 0.1px black;
+}
+
+.card-footer button:hover{
+    box-shadow: 0px 4px 5px #d7d7db;
 }
 
 .card-link{

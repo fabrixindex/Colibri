@@ -1,35 +1,57 @@
 import { createContext, useState } from "react";
 
-const cartContext = createContext({ default: "default"});
-const Provider = cartContext.Provider;
+const cartContext = createContext({ cart: []});
 
 function CartProvider(props){
 
     const [cart, setCart] = useState([]);
+    const newCart = [...cart];
 
-    function addItem(producto, count){
-        const newCart = [...cart];
-        newCart.push({...producto, count})
+    function addItem(producto, countFromCounter){
 
+        if (isItemInCart(producto.id)){
+            const itemIndex = cart.findIndex((itemInCart) => itemInCart.id === producto.id);
+            newCart[itemIndex].count += countFromCounter;
+        }else{
+            newCart.push({...producto, count: countFromCounter})
+        }
         setCart(newCart);
+    };
+
+    function isItemInCart(id){
+        return cart.some(itemInCart => itemInCart.id === id)
     }
 
-    function getPriceInCart(){
-        //HACER FUNCION 
-        //CANTIDAD * PRECIO
-        return 999999;    
+    function getCountInCart(){
+        return cart.reduce((total, item) => total + item.count, 0);
     }
 
-    /* function getCountInCart(){
+    function removeItem(id){
+        const filtro = cart.filter(itemInCart => itemInCart.id !== id)
+        setCart(filtro)
+    }
+
+    function getPriceInCart (price, count){
+        const totalCantidad = price * count;
+        return totalCantidad.toLocaleString('es-ES');
+    }
+
+     function getTotalPrice(){
         let total = 0;
-        cart.forEach()
-        return 5;
-    }*/
+        cart.forEach((item) => {
+          total += item.price * item.count;
+        });
+        return total.toLocaleString('es-ES');
+    }
+
+    function clearCart(){
+        setCart([]);
+    }
 
     return(
-        <Provider value={{ cart, addItem, getPriceInCart }}>
-        {props.children}
-        </Provider>
+        <cartContext.Provider value={{ cart: cart, addItem, getPriceInCart, isItemInCart, getCountInCart, getTotalPrice, removeItem, clearCart}}>
+            {props.children}
+        </cartContext.Provider>
     );
 }
 

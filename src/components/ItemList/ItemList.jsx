@@ -14,6 +14,7 @@ function ItemList({products}){
             price={producto.price}
             category={producto.category}
             img={producto.img}
+            stock={producto.stock}
             description={producto.description}
             longDescription={producto.longDescription}
             />

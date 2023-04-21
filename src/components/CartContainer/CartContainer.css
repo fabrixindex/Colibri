@@ -1,0 +1,46 @@
+.tableCart{
+    border-spacing: 0;
+    border-radius: 5px;
+    border: solid 1px rgb(127, 235, 113);  
+    width: 95%;
+    margin: 15px auto;
+    text-align: center;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.15);
+  }
+  
+  .title-cart-list{
+    color: #4e4e4e;
+    font-family: 'Montserrat', sans-serif;
+    margin: 2rem;
+    text-decoration: underline rgb(127, 235, 113);
+  }
+  
+  .cartList-encabezado{
+    background-color: rgb(127, 235, 113);
+    margin: 8px auto;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .cartList_row{
+    line-height: 60px;
+  }
+  
+  .cartList_detail{
+    color: #787878;
+    text-align: center;
+    line-height: 1.5rem;
+    width: 100%;
+  }
+
+  .img-cart-miniatura{
+    height: 7rem;
+  }
+
+  .total-text{
+    font-size: 1.5rem;
+    text-align: end;
+    margin-right: 4rem;
+    color: #2d2d2e;
+    font-family: 'Montserrat', sans-serif;
+  }

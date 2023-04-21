@@ -4,48 +4,42 @@ import { useContext } from "react";
 import { cartContext } from "../../context/cartContext";
 
 function ItemDetail({ producto }) {
+  const { addItem, getCountInCart } = useContext(cartContext);
 
-  const { cart, addItem } = useContext(cartContext);
-  /*const { addedToCart, setAddedToCart} = useState(false);*/
-
-  console.log("cart", cart);
-  
-  function onAddToCart(count){
+  function onAddToCart(count) {
     addItem(producto, count);
   }
 
-  return (
-    <div>
-      <div id={producto.id} className="card">
-        <div className="card-header">
-          <h3>{producto.title}</h3>
-          <p>{producto.description}</p>
-        </div>
+  const countInCart = getCountInCart(producto.id);
 
-        <div className="card-img">
+  return (
+    <div className="container-detail">
+      <div id={producto.id} className="cardd">
+        <div className="cardd-img">
           <img src={`/img/${producto.img}`} alt="Imagen-producto-detalle" />
           <i className="bx bx-heart"></i>
         </div>
 
         <div className="card-details">
+          <div className="card-header">
+            <h3>{producto.title}</h3>
+            <p>{producto.description}</p>
+          </div>
           <div className="price">
             <p>Price</p>
-            <strong>${producto.price}</strong>
+            <p className="price-number">
+              <strong>${producto.price}</strong> ARS
+            </p>
           </div>
-          <div className="colors">
-            <div className="selected">
-              <i className="bx bx-check"></i>
-            </div>
-            <div>
-              <i className="bx bx-check"></i>
-            </div>
-            <div>
-              <i className="bx bx-check"></i>
-            </div>
+          <div>
+            <p className="long-description">{producto.longDescription}</p>
           </div>
-        </div>
-        <div>
-        <ItemCount onAddToCart={onAddToCart}/>
+          <div>
+            <ItemCount
+              stock={producto.stock - countInCart}
+              onAddToCart={onAddToCart}
+            />
+          </div>
         </div>
       </div>
     </div>

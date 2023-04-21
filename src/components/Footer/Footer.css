@@ -1,0 +1,62 @@
+#body__footer, .caja-png, .grupo-1, .grupo-2 {
+    background-color: #8d8c82;
+    width: 100%; }
+  
+  .caja-png,
+  figure {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  
+  .logo-footer {
+    width: 7rem;
+    margin-top: 1rem;}
+  
+  .textito-principal-grupo-1,
+  .textito-redes {
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 0.3rem 4rem;
+    text-decoration: underline; 
+  }
+  
+  .textito-redes {
+    text-align: left;
+    margin-left: 2.5rem; 
+    font-family: 'Montserrat', sans-serif;
+}
+  
+  .textito-secundario-grupo-1 {
+    color: #efefef;
+    margin: 0.5rem 5rem 2rem 5rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; }
+  
+  .red-social {
+    margin: 0.5rem 0rem 0.5rem 2.5rem; }
+  
+  #redes {
+    display: inline-block;
+    text-decoration: none;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    color: white;
+    margin-right: 10px;
+    background-color: rgb(127, 235, 113);
+    text-align: center;
+    transition: all 300ms ease; 
+    cursor: pointer;
+}
+  
+  #redes:hover {
+    color: rgb(4, 238, 255); }
+  
+  .grupo-2 {
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Slab', serif; }

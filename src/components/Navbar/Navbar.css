@@ -1,7 +1,7 @@
 .nav-bar{
     background-color: rgb(159, 250, 156);
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -21,12 +21,14 @@
 
 .nav-lista a{
     font-size: 700;
-    color: #ffffff;
+    font-weight: bold;
+    color: white;
     text-decoration: none;  
+    font-family: 'Noto Serif', serif;
 }
 
 .nav-lista a:hover{
-    color: #eff7a7;
+    color: rgb(0, 238, 255);
 }
 
 .nav-item{
@@ -38,6 +40,7 @@
     height: 70px;
     width: auto;
     transition: all 0.3s;
+    margin-left: 0.8rem;
 }
 
 .nav-logo:hover{
