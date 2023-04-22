@@ -62,11 +62,12 @@ function FormCheckout({onCheckout}){
             <label className="input-form">Direccion</label>
             <input value={userData.direccion} name="direccion" type="text" placeholder="Direccion" required onChange={onInputChange} />
           </div>
-    
-          <button className="btn-cancelar" onClick={clearFormData}>Cancelar</button>
-        
 
-        <button className="btn-finalizar-compra" onClick={onSubmit} type="submit">Finalizar Compra</button>
+          <div className="container-btn-form">
+            <button className="btn-cancelar" onClick={clearFormData}>Cancelar</button>
+            <button className="btn-finalizar-compra" onClick={onSubmit} type="submit">Finalizar Compra</button>
+          </div>
+  
         </form>
         </>
     )

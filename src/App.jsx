@@ -3,8 +3,6 @@ import Navbar from "./components/Navbar/Navbar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import "bootstrap/dist/css/bootstrap.css";
-//import "bootstrap/dist/js/bootstrap.bundle";
-/*import * as bootstrap from "bootstrap";*/
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from "./context/cartContext";
 import CartContainer from "./components/CartContainer/CartContainer";

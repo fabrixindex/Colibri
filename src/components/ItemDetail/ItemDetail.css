@@ -83,7 +83,7 @@ html {
     border-radius: 6px;
 }
 
-.cardd .card-details {
+.cardd .cardd-details {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -91,7 +91,7 @@ html {
     max-width: 40%;
 }
 
-.cardd .card-details .price p {
+.cardd .cardd-details .price p {
     color: #757d8a;
     font-size: 20px;
 }
@@ -102,20 +102,20 @@ html {
     text-align: justify;
 }
 
-.cardd .card-details .price strong {
+.cardd .cardd-details .price strong {
     color: #545d6d;
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
 }
 
-.cardd .card-details .colors div i {
+.cardd .cardd-details .colors div i {
     color: #ffffff;
     margin: 5px;
     font-size: 25px;
     opacity: 0;
 }
 
-.cardd .card-details .colors div.selected i {
+.cardd .cardd-details .colors div.selected i {
     opacity: 1;
 }
 

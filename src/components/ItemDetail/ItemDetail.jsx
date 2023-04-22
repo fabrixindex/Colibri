@@ -20,7 +20,7 @@ function ItemDetail({ producto }) {
           <i className="bx bx-heart"></i>
         </div>
 
-        <div className="card-details">
+        <div className="cardd-details">
           <div className="card-header">
             <h3>{producto.title}</h3>
             <p>{producto.description}</p>

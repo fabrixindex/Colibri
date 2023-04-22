@@ -1,17 +1,21 @@
 *{box-sizing:border-box;}
 
 form{
-	width:400px;
+	width:85%;
 	padding:25px;
 	border-radius:10px;
 	margin:auto;
 	background-color: beige;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 form label{
 	width:72px;
 	display:inline-block;
     margin-bottom: 0.3rem;
+    margin-left: 2rem;
+    margin-right: 2.5rem;
     text-decoration: underline rgb(175, 175, 175);
 }
 
@@ -24,7 +28,7 @@ form label{
 form input[type="text"],
 form input[type="email"],
 form input[type="number"]{
-	width:350px;
+	width:85%;
 	padding:3px 10px;
 	border:1px solid #f6f6f6;
 	border-radius:3px;
@@ -76,4 +80,11 @@ form input[type="text"],form input[type="email"],form input[type="number"]:hover
     padding-left: 2rem;
     padding-right: 2rem;
 
+}
+
+.container-btn-form{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-right: 1rem;
 }

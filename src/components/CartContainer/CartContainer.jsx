@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import FormCheckout from "../FormCheckout/FormCheckout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 function CartContainer() {
   const contex = useContext(cartContext);
@@ -36,7 +37,7 @@ function CartContainer() {
 
   return (
     <>
-    <h1 className="title-cart-list">Tu Carrito</h1>
+    <h1 className="title-cart-list">Tu Carrito <FontAwesomeIcon icon={faCartShopping} size="sm" style={{color: "#3adf3c",}} /></h1>
 
     <table className="tableCart">
       <thead className="cartList-encabezado">
@@ -53,8 +54,8 @@ function CartContainer() {
 
       {cart.length === 0 ? (
   <tr>
-    <td colSpan="6" style={{ textAlign: "center" }}>
-      El carrito esta vacio!
+    <td className="carrito-vacio" colSpan="6">
+      ¡El carrito esta vacio!
     </td>
   </tr>
 ) : (cart.map((item) => (
