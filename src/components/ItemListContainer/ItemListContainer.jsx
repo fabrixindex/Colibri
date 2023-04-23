@@ -7,32 +7,27 @@ import { getItems, getItemsByCategory } from "../../services/firestore";
 
 /*-------------------------------------------------*/
 
-function ItemListContainer(){
+function ItemListContainer() {
+  const [products, setProducts] = useState([]);
+  const { categoryid } = useParams();
 
-    const [products, setProducts] = useState([]);
-    const {categoryid} = useParams();
-
-    useEffect(()=> {
-      if(categoryid === undefined){
-
-        getItems().then((respuesta) => {
-            setProducts(respuesta);
-        });
-      }else{
-        getItemsByCategory(categoryid).then((respuesta)=> 
-          setProducts(respuesta)
-        );
-      }
-
-    }, [categoryid]);
-
-    if (products.length === 0){
-      return(<Loader/>)
+  useEffect(() => {
+    if (categoryid === undefined) {
+      getItems().then((respuesta) => {
+        setProducts(respuesta);
+      });
+    } else {
+      getItemsByCategory(categoryid).then((respuesta) =>
+        setProducts(respuesta)
+      );
     }
+  }, [categoryid]);
 
-    return(
-            <ItemList products={products}/> 
-    );
+  if (products.length === 0) {
+    return <Loader />;
+  }
+
+  return <ItemList products={products} />;
 }
 
 export default ItemListContainer;

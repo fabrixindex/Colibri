@@ -10,7 +10,6 @@ import Checkout from "./components/Checkout/Checkout";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-
   return (
     <CartProvider>
       <BrowserRouter>
@@ -30,8 +29,7 @@ function App() {
           <Route path="*" element={<h1>Error 404. Page not found</h1>} />
         </Routes>
 
-        <Footer/>
-
+        <Footer />
       </BrowserRouter>
     </CartProvider>
   );

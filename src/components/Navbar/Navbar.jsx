@@ -8,11 +8,7 @@ function Navbar() {
       <nav className="nav-bar">
         <Link to="/">
           <div className="nav-logo_contenedor">
-            <img
-              src="/img/colibri-logo.png"
-              alt="logo"
-              className="nav-logo"
-            />
+            <img src="/img/colibri-logo.png" alt="logo" className="nav-logo" />
           </div>
         </Link>
 
@@ -30,7 +26,9 @@ function Navbar() {
             <Link to="/category/Sillas">Sillas</Link>
           </li>
           <li className="nav-item">
-            <Link to="/cart"><CartWidget /></Link>
+            <Link to="/cart">
+              <CartWidget />
+            </Link>
           </li>
         </ul>
       </nav>

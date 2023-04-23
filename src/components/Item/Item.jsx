@@ -20,7 +20,15 @@ function Item(props) {
             <div className="price">
               <p>Price</p>
               <strong>${props.price}</strong>
-              <div>{props.stock <= 1 ? <p style={{color: 'red', fontWeight: 'bold'}}>¡Última unidad disponible!</p> : ""}</div>
+              <div>
+                {props.stock <= 1 ? (
+                  <p style={{ color: "red", fontWeight: "bold" }}>
+                    ¡Última unidad disponible!
+                  </p>
+                ) : (
+                  ""
+                )}
+              </div>
             </div>
           </div>
 

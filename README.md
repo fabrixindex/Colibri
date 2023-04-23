@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# E-Commerce Colibrí
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+¡Hola querido usuario!
+Colibrí es un sitio de venta on-line dedicado a la venta de muebles y objetos de decoracion. El objetivo de este sitio es mostrar en funcionamiento un simulador de un E-commerce, pudiendo llevar a cabo la compra de alguno de los articulos ofrecidos.
 
-## Available Scripts
+Este proyecto fue diseñado utilizando [Create React App](https://github.com/facebook/create-react-app).
 
-In the project directory, you can run:
+# Tecnologia utilizada en el proyecto
+En la eleboracion de este proyecto se han utilizado las siguientes tecnologias:
+- Node.js
+- UseState y UseEffect;
+- UseContext;
+- Carga de datos en la nube a traves de Firebase;
+- Routing: React router;
+- Librerias: Bootstrap, Font Awesome, Google Fonts;
+- Renderizados condicionales;
+- Maquetacion y Estilos:  HTML5 y CSS5;
+- Logica e interactividad: Java Script;
 
-### `npm start`
+## ¿Te gustaría ver en funcionamiento esta App?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+INGRESA AL SIGUIENTE LINK: https://colibri-two.vercel.app/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ¿Cómo usar esta app?
+Para clonar y ejecutar esta aplicación, necesitará Git y Node.js (que viene con npm) instalados en su computadora. Desde su consola, debera ingresar los siguientes comandos:
 
-### `npm test`
+# Clonar el repositorio
+$ git clone https://github.com/fabrixindex/Colibri.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Ir al repositorio
+$ cd colibri
 
-### `npm run build`
+# Instalar dependencias
+$ npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Correr la app
+$ npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Contacto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Desarrollador: Fabricio Papetti
+- Mail: fabrixindex@gmail.com
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+¡Muchas gracias por su atención!

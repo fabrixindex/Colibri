@@ -16,13 +16,11 @@ function ItemDetailContainer() {
     });
   }, [id]);
 
-  if (producto.length === 0){
-    return(<Loader/>)
+  if (producto.length === 0) {
+    return <Loader />;
   }
 
-  return(
-  <ItemDetail producto={producto} />
-  );
+  return <ItemDetail producto={producto} />;
 }
 
 export default ItemDetailContainer;
